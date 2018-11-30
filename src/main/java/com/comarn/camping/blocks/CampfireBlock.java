@@ -7,9 +7,9 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class TaconiteBlock extends CampingBlock {
-	public TaconiteBlock() {
-        super("taconiteblock", Material.ROCK);
+public class CampfireBlock extends CampingBlock {
+	public CampfireBlock() {
+        super("campfireblock", Material.ROCK);
     }
 	
 	@SideOnly(Side.CLIENT)
