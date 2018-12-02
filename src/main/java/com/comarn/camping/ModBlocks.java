@@ -13,28 +13,28 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ModBlocks {
 
-    @GameRegistry.ObjectHolder("camping:taconiteblock")
-    public static CampfireBlock campfireBlock = new CampfireBlock();
+//    @GameRegistry.ObjectHolder("camping:taconiteblock")
+//    public static CampfireBlock campfireBlock = new CampfireBlock();
     
 //    public static CampingBlock boringBlock = new CampingBlock("boringblock", Material.ROCK);
 	
     
 	public static void registerBlocks(RegistryEvent.Register<Block> event) {
-		 event.getRegistry().register(campfireBlock);
+//		 event.getRegistry().register(campfireBlock);
 	}
 	
 	public static void registerItemBlocks(RegistryEvent.Register<Item> event) {
-        event.getRegistry().register(new ItemBlock(campfireBlock).setRegistryName(campfireBlock.getRegistryName()));
+//        event.getRegistry().register(new ItemBlock(campfireBlock).setRegistryName(campfireBlock.getRegistryName()));
 	}
 	
 	
 	@SideOnly(Side.CLIENT)
-	public static void registerModels(ModelRegistryEvent event) {
-		campfireBlock.initModel();
+	public static void initModels(ModelRegistryEvent event) {
+//		campfireBlock.initModel();
 	}
 	
 	@SideOnly(Side.CLIENT)
-    public static void registerItemModels() {
+    public static void initItemModels() {
 //        bakedModelBlock.initItemModel();
     }
 }

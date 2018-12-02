@@ -1,7 +1,7 @@
 package com.comarn.camping.proxy;
 
 import com.comarn.camping.ModBlocks;
-import com.comarn.camping.items.MarshmallowItem;
+import com.comarn.camping.ModItems;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;

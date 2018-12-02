@@ -14,12 +14,12 @@ public class ClientProxy extends CommonProxy {
 	@Override
     public void postInit(FMLPostInitializationEvent e) {
         super.postInit(e);
-        ModBlocks.registerItemModels();
+        ModBlocks.initItemModels();
     }
 
     @SubscribeEvent
     public static void registerModels(ModelRegistryEvent event) {
-        ModBlocks.registerModels(event);
-// TODO        ModItems.registerModels(event);
+        ModBlocks.initModels(event);
+        ModItems.initModels(event);
     }
 }
