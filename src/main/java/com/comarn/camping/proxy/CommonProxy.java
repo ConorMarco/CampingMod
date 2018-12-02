@@ -34,6 +34,6 @@ public class CommonProxy {
     public static void registerItems(RegistryEvent.Register<Item> event) {
     	ModBlocks.registerItemBlocks(event);
         
-        event.getRegistry().register(new MarshmallowItem());
+        ModItems.registerItems(event);
     }
 }

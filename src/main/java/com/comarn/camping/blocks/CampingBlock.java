@@ -13,8 +13,8 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class CampingBlock extends Block {
 	public CampingBlock(String name, Material mat) {
         super(mat);
-        setUnlocalizedName(CampingMod.MODID + "." + name);     // Used for localization (en_US.lang)
-        setRegistryName(name);        // The unique name (within your mod) that identifies this block
+        setRegistryName(name);
+        setUnlocalizedName(CampingMod.MODID + "." + name); 
         setCreativeTab(CampingMod.campingCreativeTab);
     }
 	
