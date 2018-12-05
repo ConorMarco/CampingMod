@@ -1,5 +1,6 @@
 package com.comarn.camping;
 
+import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.comarn.camping.proxy.CommonProxy;
@@ -17,6 +18,8 @@ public class CampingMod {
     public static final String MODNAME = "Comarn's Camping";
     public static final String VERSION = "0.0.0.0";
     public static final String MCVERSION = "1.12.2";
+    
+    public static final Logger logger = LogManager.getLogger(MODID);
 
     public static CampingCreativeTab campingCreativeTab = new CampingCreativeTab(MODNAME);
     
@@ -27,11 +30,8 @@ public class CampingMod {
     @Mod.Instance
     public static CampingMod instance;
 
-    public static Logger logger;
-
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
-        logger = event.getModLog();
         proxy.preInit(event);
     }
 
