@@ -11,11 +11,11 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class CampingBlock extends Block {
-	public CampingBlock(String name, Material mat) {
+	public CampingBlock(String name, Material mat, boolean creativeAvailable) {
         super(mat);
         setRegistryName(name);
         setUnlocalizedName(CampingMod.MODID + "." + name); 
-        setCreativeTab(CampingMod.campingCreativeTab);
+        if(creativeAvailable) { setCreativeTab(CampingMod.campingCreativeTab); }
     }
 	
 	@SideOnly(Side.CLIENT)

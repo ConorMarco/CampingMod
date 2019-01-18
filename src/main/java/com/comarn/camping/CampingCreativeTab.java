@@ -12,7 +12,7 @@ public class CampingCreativeTab extends CreativeTabs {
 	
   public CampingCreativeTab(String label) {
     super(label);
-    }
+  }
 
   @SideOnly(Side.CLIENT)
   @Override
